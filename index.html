@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AndrePickle 3D es un estudio premium de diseño e impresión 3D que fusiona tecnología futurista y estética oriental. Diseña lo imposible con nosotros.">
+  <meta name="keywords" content="impresión 3D, modelado 3D, diseño oriental, Japandi, Gen Z, productos personalizados, Pickle Cube">
+  <meta name="author" content="AndrePickle 3D">
+  
+  <title>AndrePickle 3D - Diseña lo imposible</title>
+  
+  <!-- Icono de sitio web (Favicon) -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====================================================
+       1. NAV/HEADER
+       ==================================================== -->
+  <header class="header-nav" id="main-header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-link" id="nav-logo-link" aria-label="Ir al inicio">
+        <!-- Logo completo con texto en el header -->
+        <img src="logo-completo.png" alt="AndrePickle 3D Logo Completo" class="logo-img" id="nav-logo-img">
+      </a>
+      
+      <nav class="nav-links" id="nav-menu" aria-label="Navegación principal">
+        <a href="#hero" id="link-inicio">Inicio</a>
+        <a href="#philosophy" id="link-filosofia">Filosofía</a>
+        <a href="#gallery" id="link-galeria">Galería</a>
+        <a href="#process" id="link-proceso">Proceso</a>
+        <a href="#quote" id="link-cotizador">Cotizar</a>
+      </nav>
+      
+      <div class="nav-actions" id="nav-cta-action">
+        <a href="#quote" class="btn btn-primary" id="btn-header-cta">Cotizar Proyecto</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- ====================================================
+         2. HERO SECTION
+         ==================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content" id="hero-text-block">
+          <h1 id="hero-main-title">Donde la tecnología del futuro se esculpe con <span>tradición oriental</span></h1>
+          <p id="hero-description">Transformamos tus ideas más audaces en objetos tangibles con impresión 3D premium. Diseños personalizados para marcas creativas, creadores y amantes del arte digital.</p>
+          <div class="hero-buttons" id="hero-action-buttons">
+            <a href="#quote" class="btn btn-primary" id="btn-hero-cta">Diseña lo imposible</a>
+            <a href="#gallery" class="btn btn-secondary" id="btn-hero-gallery">Explorar Galería</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual" id="hero-visual-block">
+          <div class="cube-container" id="animated-cube-container">
+            <!-- Pickle-Cube 3D simulado con logo SVG giratorio -->
+            <img src="logo.svg" alt="Pickle Cube Isometric 3D Logo" class="pickle-cube-logo" id="hero-cube-logo">
+            <div class="cube-decoration-ring" id="hero-decoration-ring"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         3. FILOSOFÍA / DIFERENCIALES
+         ==================================================== -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="section-header" id="philosophy-header">
+          <h2>Fusion Tech Artisan</h2>
+          <p>Nuestra identidad híbrida combina minimalismo estético, precisión tecnológica y diseño lúdico.</p>
+        </div>
+        
+        <div class="philosophy-grid" id="philosophy-cards-container">
+          <!-- Tarjeta 1 -->
+          <div class="philosophy-card" id="card-minimalism">
+            <div class="card-icon" aria-hidden="true">🏯</div>
+            <h3>Minimalismo Moderno</h3>
+            <p>Líneas limpias, simetría perfecta y un orden visual riguroso en cada uno de nuestros modelados.</p>
+          </div>
+          
+          <!-- Tarjeta 2 -->
+          <div class="philosophy-card" id="card-oriental">
+            <div class="card-icon" aria-hidden="true">🎏</div>
+            <h3>Toque Oriental</h3>
+            <p>Inspiración estética de la cultura japonesa y coreana aplicada al diseño contemporáneo de productos.</p>
+          </div>
+          
+          <!-- Tarjeta 3 -->
+          <div class="philosophy-card" id="card-pickle">
+            <div class="card-icon" aria-hidden="true">🥒</div>
+            <h3>Elemento Lúdico</h3>
+            <p>El nombre "Pickle" aporta un toque geek, divertido e inconfundible a nuestro proceso creativo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         4. GALERÍA / SHOWCASE CON FILTROS DINÁMICOS
+         ==================================================== -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header" id="gallery-header">
+          <h2>Galería de Modelos</h2>
+          <p>Explora nuestras últimas impresiones y renders. Filtra según tus intereses.</p>
+        </div>
+        
+        <!-- Filtros Dinámicos -->
+        <div class="gallery-filters" id="gallery-filter-buttons" role="tablist">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">Todos</button>
+          <button class="filter-btn" data-filter="oriental" role="tab" aria-selected="false" id="filter-oriental">Línea Oriental</button>
+          <button class="filter-btn" data-filter="custom" role="tab" aria-selected="false" id="filter-custom">Personalizados</button>
+          <button class="filter-btn" data-filter="futurist" role="tab" aria-selected="false" id="filter-futurist">Futuristas</button>
+        </div>
+        
+        <!-- Grid de Galería -->
+        <div class="gallery-grid" id="gallery-items-container">
+          
+          <!-- Item 1 (Línea Oriental) -->
+          <div class="product-card" data-category="oriental" id="prod-oriental-samurai">
+            <div class="product-img-wrapper">
+              <img src="oriental_sculpture.png" alt="Escultura samurai 3D moderna color Jade" class="product-img">
+              <div class="product-tech-specs">
+                <ul>
+                  <li><span>Material:</span><span>PLA Premium</span></li>
+                  <li><span>Resolución:</span><span>0.12 mm</span></li>
+                  <li><span>Tiempo:</span><span>22 horas</span></li>
+                  <li><span>Diseño:</span><span>Japandi</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Línea Oriental</span>
+              <h3 class="product-title">Guerrero Oriental Matte</h3>
+              <p class="product-desc">Escultura de casco samurai minimalista con acabado mate en color Jade Moderno y finos detalles decorativos en Oro Pálido.</p>
+              <div class="product-action">
+                <span class="product-badge">Colección Arte</span>
+                <a href="#quote" class="btn btn-link" id="btn-order-samurai">Consultar →</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item 2 (Futuristas) -->
+          <div class="product-card" data-category="futurist" id="prod-futurist-organizer">
+            <div class="product-img-wrapper">
+              <img src="futurist_organizer.png" alt="Organizador de escritorio futurista en impresión 3D" class="product-img">
+              <div class="product-tech-specs">
+                <ul>
+                  <li><span>Material:</span><span>PETG Reforzado</span></li>
+                  <li><span>Resolución:</span><span>0.20 mm</span></li>
+                  <li><span>Tiempo:</span><span>14 horas</span></li>
+                  <li><span>Acento:</span><span>Neón Magenta</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Futuristas</span>
+              <h3 class="product-title">Organizador Cyberpunk</h3>
+              <p class="product-desc">Organizador geométrico de escritorio con estructura de rejilla ultra resistente en Gris Acero y líneas vibrantes en Neón Magenta.</p>
+              <div class="product-action">
+                <span class="product-badge">Edición Tech</span>
+                <a href="#quote" class="btn btn-link" id="btn-order-organizer">Consultar →</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Item 3 (Personalizados) -->
+          <div class="product-card" data-category="custom" id="prod-custom-pickle">
+            <div class="product-img-wrapper">
+              <img src="custom_gift.png" alt="Regalo corporativo Pickle Cube dorado" class="product-img">
+              <div class="product-tech-specs">
+                <ul>
+                  <li><span>Material:</span><span>Resina de Alta Definición</span></li>
+                  <li><span>Resolución:</span><span>0.05 mm</span></li>
+                  <li><span>Tiempo:</span><span>8 horas</span></li>
+                  <li><span>Detalle:</span><span>Baño Oro Pálido</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Personalizados</span>
+              <h3 class="product-title">Pickle-Cube Artesanal</h3>
+              <p class="product-desc">Cubo isométrico lúdico representativo de la marca. Impresión premium con detalles cromados y textura pulida a mano.</p>
+              <div class="product-action">
+                <span class="product-badge">Corporativo / VIP</span>
+                <a href="#quote" class="btn btn-link" id="btn-order-pickle">Consultar →</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         5. CÓMO FUNCIONA (Proceso en 3 Pasos)
+         ==================================================== -->
+    <section class="process-section" id="process">
+      <div class="container">
+        <div class="section-header" id="process-header">
+          <h2>Proceso de Creación</h2>
+          <p>Del mundo digital a tus manos en tres fases minuciosamente optimizadas.</p>
+        </div>
+        
+        <div class="process-grid" id="process-steps-container">
+          <!-- Paso 1 -->
+          <div class="process-step" id="step-one">
+            <div class="process-num">01</div>
+            <h3>Conceptualización</h3>
+            <p>Recibimos tus bocetos o archivos 3D. Evaluamos la viabilidad y perfeccionamos la geometría.</p>
+          </div>
+          
+          <!-- Paso 2 -->
+          <div class="process-step" id="step-two">
+            <div class="process-num">02</div>
+            <h3>Impresión de Alta Precisión</h3>
+            <p>Fabricamos la pieza utilizando filamentos biodegradables o resinas ópticas capa por capa.</p>
+          </div>
+          
+          <!-- Paso 3 -->
+          <div class="process-step" id="step-three">
+            <div class="process-num">03</div>
+            <h3>Acabado y Curado</h3>
+            <p>Pulimos, detallamos y curamos manualmente cada objeto para garantizar una calidad artesanal premium.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         6. COTIZADOR (FORMULARIO DE CONTACTO)
+         ==================================================== -->
+    <section class="contact-section" id="quote">
+      <div class="container">
+        <div class="section-header" id="contact-header">
+          <h2>Diseña lo Imposible</h2>
+          <p>Cuéntanos sobre tu idea o proyecto. Te enviaremos una propuesta técnica y económica personalizada.</p>
+        </div>
+        
+        <div class="form-container" id="quote-form-container">
+          <!-- Mensaje de éxito (oculto por defecto) -->
+          <div class="form-message" id="submit-success-message" role="alert">
+            ✓ ¡Recibido! Tu solicitud ha sido registrada por el equipo de diseño. Te responderemos en menos de 24 horas con una propuesta en PDF.
+          </div>
+          
+          <form id="quote-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="form-name">Nombre o Empresa</label>
+              <input type="text" id="form-name" name="name" class="form-control" placeholder="Ej. Andrea Pickle" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email">Correo Electrónico</label>
+              <input type="email" id="form-email" name="email" class="form-control" placeholder="ejemplo@andrepickle3d.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-category">Tipo de Proyecto</label>
+              <select id="form-category" name="category" class="form-control" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="oriental">Colección Oriental / Japandi</option>
+                <option value="custom">Productos Corporativos / Personalizados</option>
+                <option value="futurist">Accesorios y Prototipos Futuristas</option>
+                <option value="other">Otro Proyecto de Impresión 3D</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-message">Detalles del Proyecto / Especificaciones</label>
+              <textarea id="form-message" name="message" class="form-control" placeholder="Describe las dimensiones estimadas, colores, cantidad o adjunta una descripción del diseño..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary form-submit-btn" id="btn-submit-quote">Enviar Solicitud</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       7. PIE DE PÁGINA (FOOTER)
+       ==================================================== -->
+  <footer class="footer-section" id="main-footer">
+    <div class="container">
+      <img src="logo.png" alt="AndrePickle 3D Isotipo Logo" class="footer-logo" id="footer-logo-img">
+      <div class="footer-slogan" id="footer-brand-slogan">Diseña lo imposible</div>
+      
+      <div class="footer-socials" id="footer-social-links">
+        <a href="https://instagram.com/andrepickle3d" target="_blank" rel="noopener" class="social-link" id="social-instagram">Instagram</a>
+        <a href="https://tiktok.com/@andrepickle3d" target="_blank" rel="noopener" class="social-link" id="social-tiktok">TikTok</a>
+        <a href="https://pinterest.com/andrepickle3d" target="_blank" rel="noopener" class="social-link" id="social-pinterest">Pinterest</a>
+      </div>
+      
+      <div class="footer-bottom" id="footer-copyright-block">
+        <p>&copy; 2026 AndrePickle 3D. Todos los derechos reservados. Estética "Fusion Tech Artisan".</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script interactivo principal -->
+  <script src="script.js"></script>
+</body>
+</html>
