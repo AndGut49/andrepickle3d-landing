@@ -12,3 +12,7 @@ desktop.ini
 # Archivos de entorno
 .env
 .env.local
+
+#vscode
+launch.json
+

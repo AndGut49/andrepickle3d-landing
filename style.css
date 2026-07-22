@@ -433,18 +433,30 @@ p {
   background-color: var(--color-crema);
 }
 
-.product-img {
+.product-img,
+.product-img-hover {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: var(--transition-normal);
 }
 
+.product-img-hover {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
 .product-card:hover .product-img {
+  opacity: 0;
   transform: scale(1.05);
+}
+
+.product-card:hover .product-img-hover {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* Especificaciones Técnicas (JetBrains Mono) */
